@@ -34,6 +34,7 @@ const getPokemonData = (url, pokemonName) => {
     console.log("두개의 매개변수는 모두 문자열을 요구합니다.");
   }
 };
+
 const main = async () => {
   console.time("time-check"); //consol 메서드에는 시간을 측정하는 기능이 있다.
   try {
