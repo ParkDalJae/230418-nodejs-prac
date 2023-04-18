@@ -1,9 +1,9 @@
-const https = require("http");
+const https = require("https");
 
 const getPokemonData = (url, pokemonName) => {
   if (typeof url === "string" && typeof pokemonName === "string") {
     //위의 조건식은 모두 문자열이여야만 한다는 조건을 걸었다
-    let assembleUrl = url + pokeName;
+    let assembleUrl = url + pokemonName;
     return new Promise((resolve, reject) => {
       //반환이 Promise 이므로, resolve()함수가 호출될 때까지는 대기한다.
       //아래의 body에 데이터 조각들이 차곡차곡 모여 resolve() 함수가 호출될 때까지 대기한다.
